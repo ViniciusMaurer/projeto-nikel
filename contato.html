@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaurerMKT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body style="margin: 0;"">
+    <div class="container">
+
+      <!--Insere logo no header-->
+        <div class="header">
+            <center><a href="index.html"><img src="img/logo.png"></a></center>
+        </div>
+
+        <!--Barra de navegação (navbar)-->
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a class="active" href="contato.html">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--Insere formulário de conato-->
+        <div style="background-color: #f2f2f2;" class="content">
+          
+          <div class="formulario-contato">
+            
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #283459; padding-left: 50px; padding-top: 10px;">Formulário de contato</h1>
+            
+            <div class="container-contato">
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label style="color:black" for="fname">Primeiro nome</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Seu nome...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label style="color:black" for="lname">Sobrenome</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label style="color:black" for="country">Motivo</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="country" name="country">
+                      <option value="australia">Solicitar orçamento</option>
+                      <option value="canada">Vaga de emprego</option>
+                      <option value="usa">Dúvida</option>
+                      <option value="usa">Algum problema</option>
+                      <option value="usa">Outro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label style="color:black" for="subject">Escrever</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Escreva algo..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Enviar">
+                </div>
+              </form>
+            </div>
+
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #283459; padding-left: 50px; padding-top: 10px;">Localização</h1>
+          
+            <!--Insere mapa de localização-->
+            <center>
+              <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.8608402115437!2d-51.1638953248553!3d-29.607731375146347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519453f0ed7c1f1%3A0xc85cbcfcd6417b48!2sInstituto%20Ivoti!5e0!3m2!1spt-BR!2sbr!4v1687547551182!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+
+            <!--Insere os meios de conato-->
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #283459; padding-left: 50px; padding-top: 10px;">Meios de contato</h1>
+  
+            <!--Coloca cada logo de contato e seu link-->
+            <center>
+              <div class="col-contato">
+                <a href="https://wa.me/5551999962604">
+                  <img src="img/icone-whats-contato.png">
+                </a>
+              </div>
+              <div class="col-contato">
+                <a href="https://instagram.com/vinicius_maurer_">
+                  <img src="img/icone-instagram-contato.png">
+                </a>
+              </div>
+              <div class="col-contato">
+                <a href="https://www.linkedin.com/in/vinícius-maurer-a1a952242">
+                  <img src="img/icone-linkedin-contato.png">
+                </a>
+              </div>
+              <div class="col-contato">
+                <a href="mailto:vinicius.maurer@institutoivoti.com.br">
+                  <img src="img/logo-email-contato.png">
+                </a>
+              </div>
+            </center>
+          </div>
+          
+        </div>
+        
+        <!--Rodapé-->
+        <div class="footer">
+            <center><p style="color: white;">&copy; 2023 MaurerMKT. Todos os direitos reservados.</p></center>
+        </div>
+        
+    </div>
+
+</body>
+</html>
